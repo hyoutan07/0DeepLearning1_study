@@ -1,0 +1,10 @@
+version: '3'
+services:
+  python3:
+    restart: always
+    build: .
+    container_name: '0Deep1'
+    working_dir: '/root/home'
+    tty: true
+    volumes:
+      - ./:/root/
